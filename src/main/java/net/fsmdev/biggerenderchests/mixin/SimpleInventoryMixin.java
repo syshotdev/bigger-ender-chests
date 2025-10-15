@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.Mutable;
 import org.spongepowered.asm.mixin.gen.Accessor;
 
 @Mixin(SimpleInventory.class)
-public interface SimpleInventoryMixin{
+public interface SimpleInventoryMixin {
     @Accessor("size")
     @Mutable void setSize(int size);
 

@@ -18,7 +18,7 @@ public abstract class PlayerEntityMixin {
     @Shadow public abstract EnderChestInventory getEnderChestInventory();
 
     @Inject(method="<init>", at = @At(value="RETURN"))
-    private void resizableEnderChest(final World w, final BlockPos bp, float y, final GameProfile gp, final CallbackInfo ci) {
+    private void resizableEnderChest(final World w, final GameProfile gp, final CallbackInfo ci) {
         SimpleInventoryMixin enderChestInventory = (SimpleInventoryMixin) getEnderChestInventory();
         enderChestInventory.setSize(54);
         enderChestInventory.setStacks(DefaultedList.ofSize(54, ItemStack.EMPTY));
