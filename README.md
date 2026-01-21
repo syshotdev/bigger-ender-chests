@@ -1,3 +1,6 @@
+# ATTENTION: The releases seem to have broken. Please wait as I try to bring them back functioning
+
+
 # An update of a mod for bigger enderchests
 ## Releases
 On the right side, you'll see releases. These are all the versions I've currently built
